@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel = "favicon" href="/public/favicon.ico">
+    <title>To Do List</title>
+    <script type='text/javascript'>
+        (() => {
+            if(window.localStorage) {
+                if (!localStorage.getItem('reload')) {
+                    localStorage['reload'] = true;
+                    window.location.reload();
+                } else {
+                    localStorage.removeItem('reload');
+                }
+            }
+        })();
+    </script>
+</head>
